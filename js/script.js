@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const elemento = `
             <li>
                 <i class='bx ${REALIZADO}' data="realizado" id="${id}"></i>
-                <p class="text" style="${LINE ? 'text-decoration: line-through;' : ''}">${tarea}</p>
+                <p class="text" ${LINE ? 'style="text-decoration: line-through;"' : ''}>${tarea}</p>
                 <i class='bx bx-trash' data="eliminado" id="${id}"></i>
             </li>`;
         lista.insertAdjacentHTML("beforeend", elemento);
